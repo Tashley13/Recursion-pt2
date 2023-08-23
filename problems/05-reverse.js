@@ -11,10 +11,19 @@ reverse("q"); // "q"
 reverse("id"); // "di"
 reverse(""); // ""
 ***********************************************************************/
+/*
+bc: empty string
+rc:
+rs:
+default parameter: 0
+*/
 
-
-function reverse(str) {
-  // Your code here 
+let newArr=[]
+function reverse(str, count=str.length) {
+  if (count=>0) {
+    return newArr.join("")
+  }
+  return newArr.push(str, count--)
 }
 
 
