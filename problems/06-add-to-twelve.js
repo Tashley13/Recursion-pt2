@@ -11,10 +11,12 @@ addToTwelve([1, 11, 4, 7, 6]); // true
 addToTwelve([1, 12, 4, 7, 6]); // false
 addToTwelve([1]); // false
 ***********************************************************************/
-
+//bc: false
+//rc: two number add to twelve
+//
 
 function addToTwelve(arr) {
-  // Your code here 
+  // Your code here
 }
 
 

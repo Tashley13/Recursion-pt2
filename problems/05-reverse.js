@@ -18,15 +18,23 @@ rs:
 default parameter: 0
 */
 
-let newArr=[]
-function reverse(str, count=str.length) {
-  if (count=>0) {
-    return newArr.join("")
+
+function reverse(str, count=str.length, newArr=[]) {
+
+  if (count>0) {//rc
+    count --//rs
+    newArr.push(str[count])
+    reverse(str, count, newArr)
   }
-  return newArr.push(str, count--)
+  return newArr.join("")//base case
 }
 
-
+console.log(reverse("house")); // "esuoh"
+console.log(reverse("dog")); // "god"
+// reverse("atom"); // "mota"
+// reverse("q"); // "q"
+// reverse("id"); // "di"
+// reverse(""); // ""
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = reverse;
